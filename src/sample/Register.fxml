@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <Button id="register_button" fx:id="register_button" layoutX="259.0" layoutY="361.0" mnemonicParsing="false" onAction="#register_clicked" text="Register" />
+      <Label fx:id="label_txt" layoutX="255.0" layoutY="23.0" prefHeight="17.0" prefWidth="103.0" text="Register">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField id="register_username" fx:id="register_username" layoutX="220.0" layoutY="58.0" promptText="Username" />
+      <PasswordField id="register_pwd" fx:id="register_pwd" layoutX="220.0" layoutY="95.0" promptText="Password" />
+      <PasswordField id="register_repwd" fx:id="register_repwd" layoutX="220.0" layoutY="129.0" promptText="Re-Type Password" />
+      <ToggleButton id="register_business" fx:id="register_business" layoutX="146.0" layoutY="245.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Business" />
+      <ToggleButton id="register_entertainment" fx:id="register_entertainment" layoutX="244.0" layoutY="245.0" mnemonicParsing="false" text="Entertainment" />
+      <ToggleButton id="register_general" fx:id="register_general" layoutX="347.0" layoutY="245.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="General" />
+      <ToggleButton id="register_health" fx:id="register_health" layoutX="146.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Health" />
+      <ToggleButton id="register_science" fx:id="register_science" layoutX="244.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Science" />
+      <ToggleButton id="register_sports" fx:id="register_sports" layoutX="347.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Sports" />
+      <ToggleButton id="register_technology" fx:id="register_technology" layoutX="245.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Technology" />
+      <Label layoutX="94.0" layoutY="221.0" text="choose your preferences:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="register_country" fx:id="register_country" layoutX="220.0" layoutY="165.0" prefWidth="150.0" promptText="Select your country" />
+   </children>
+</AnchorPane>

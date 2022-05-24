@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="sample.EditsettingsController">
+   <children>
+      <ToggleButton id="settings_business" fx:id="settings_business" layoutX="145.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Business" />
+      <ToggleButton id="settings_entertainment" fx:id="settings_entertainment" layoutX="256.0" layoutY="175.0" mnemonicParsing="false" text="Entertainment" />
+      <ToggleButton id="settings_general" fx:id="settings_general" layoutX="365.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="General" />
+      <ToggleButton id="settings_health" fx:id="settings_health" layoutX="145.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Health" />
+      <ToggleButton id="settings_science" fx:id="settings_science" layoutX="256.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Science" />
+      <ToggleButton id="settings_sports" fx:id="settings_sports" layoutX="365.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Sports" />
+      <ToggleButton id="settings_technology" fx:id="settings_technology" layoutX="256.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Technology" />
+      <Button fx:id="settings_edit" layoutX="275.0" layoutY="346.0" mnemonicParsing="false" onAction="#edit_clicked" text="Update " />
+      <ComboBox fx:id="settings_country" layoutX="208.0" layoutY="108.0" prefHeight="25.0" prefWidth="176.0" promptText="change your country" />
+      <Button fx:id="settings_back" layoutX="39.0" layoutY="28.0" mnemonicParsing="false" onAction="#back_clicked" text="Back" />
+   </children>
+</AnchorPane>
